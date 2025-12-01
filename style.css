@@ -88,9 +88,10 @@ a {
 /* Page layout */
 
 .page {
-  max-width: 1200px;
-  margin: 1.5rem auto 2.5rem;
-  padding: 0 1.5rem;
+  width: 100%;
+  max-width: 1500px;              
+  margin: 2rem auto 3rem;
+  padding: 0 3rem;                
 }
 
 .card {
@@ -131,9 +132,9 @@ a {
 .about-layout {
   display: flex;
   align-items: flex-start;
-  gap: 2.5rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  gap: 3rem;
+  width: 100%;                    
+  max-width: none;                
 }
 
 .about-photo img {
