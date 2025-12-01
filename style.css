@@ -95,7 +95,7 @@ a {
 }
 
 .card {
-  background: radial-gradient(circle at top left, rgba(15,23,42,0.98), rgba(15,23,42,0.92));
+  background: radial-gradient(square at top left, rgba(15,23,42,0.98), rgba(15,23,42,0.92));
   border-radius: 1.5rem;
   padding: 1.9rem;
   box-shadow: 0 24px 60px rgba(15,23,42,0.9);
