@@ -89,7 +89,7 @@ a {
 
 .page {
   max-width: 1200px;
-  margin: 2.5rem auto 3.5rem;
+  margin: 1.5rem auto 2.5rem;
   padding: 0 1.5rem;
 }
 
@@ -125,7 +125,7 @@ a {
 /*  About / skills  */
 
 .about-section {
-  padding: 4rem 3rem;
+  padding: 3rem 2rem;
 }
 
 .about-layout {
