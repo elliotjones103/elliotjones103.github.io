@@ -124,6 +124,31 @@ a {
 
 /*  About / skills  */
 
+.about-section {
+  padding: 4rem 3rem;
+}
+
+.about-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-photo img {
+  width: 220px;            
+  height: 220px;
+  object-fit: cover;
+  border-radius: 999px;      
+  border: 2px solid #2b3a55; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.about-card {
+  flex: 1;
+}
+
 .pills {
   margin: 0.9rem 0 1.4rem;
 }
