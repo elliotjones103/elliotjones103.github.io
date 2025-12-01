@@ -140,7 +140,7 @@ a {
   max-width: none;                
 }
 
-.about-photo img {
+.about-photo {
   width: 260px;          
   height: 260px;
   object-fit: cover;
