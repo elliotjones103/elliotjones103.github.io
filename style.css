@@ -1,4 +1,4 @@
-/* Global */
+/* ---------- Global ---------- */
 
 * {
   box-sizing: border-box;
@@ -7,8 +7,8 @@
 :root {
   --bg: #070f31;
   --bg-alt: #0b1120;
-  --accent: #6366f1;        
-  --accent-2: #22c55e;      
+  --accent: #6366f1;
+  --accent-2: #22c55e;
   --accent-soft: rgba(99,102,241,0.25);
   --text-main: #e5e7eb;
   --text-muted: #9ca3af;
@@ -29,13 +29,13 @@ a {
   text-decoration: none;
 }
 
-/* Top navigation  */
+/* ---------- Top navigation ---------- */
 
 .navbar {
   display: flex;
-  justify-content: center;          
+  justify-content: center;
   align-items: center;
-  padding: 1rem 3rem;             
+  padding: 1rem 3rem;
   background: linear-gradient(90deg, rgba(15,23,42,0.96), rgba(15,23,42,0.92));
   border-bottom: 1px solid var(--border-subtle);
   position: sticky;
@@ -47,7 +47,7 @@ a {
 .navbar-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -85,15 +85,43 @@ a {
   box-shadow: 0 10px 25px rgba(15,23,42,0.8);
 }
 
-/* Page layout */
+/* ---------- Page layout ---------- */
 
 .page {
   width: 100%;
-  max-width: 1500px;              
+  max-width: 1500px;
   margin: 2rem auto 3rem;
-  padding: 0 3rem;                
+  padding: 0 3rem;
 }
 
+/* ---------- About layout ---------- */
+
+.about-section {
+  width: 100%;
+}
+
+.about-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+}
+
+/* Photo: square / rounded to match card */
+.about-photo {
+  flex-shrink: 0;
+}
+
+.about-photo img {
+  width: 240px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  border: 2px solid #2b3a55;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Card bubble */
 .card {
   background: radial-gradient(circle at top left, rgba(15,23,42,0.98), rgba(15,23,42,0.92));
   border-radius: 1.5rem;
@@ -104,6 +132,8 @@ a {
   flex: 1;
   max-width: none;
 }
+
+/* ---------- Typography ---------- */
 
 .page-title {
   font-size: 1.6rem;
@@ -126,37 +156,7 @@ a {
   font-weight: 600;
 }
 
-/*  About / skills  */
-
-.about-section {
-  width: 100%;
-}
-
-.about-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 3rem;
-  width: 100%;
-}
-
-.about-photo {
-  flex-shrink: 0;
-}
-
-.about-photo img {
-  width: 240px;          /* tweak to taste */
-  height: 260px;
-  object-fit: cover;     /* crops nicely */
-  border-radius: 1.5rem; /* same curve style as card */
-  border: 2px solid #2b3a55;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-
-
-.about-card {
-  flex: 1;
-  max-width: none;
-}
+/* ---------- Pills ---------- */
 
 .pills {
   margin: 0.9rem 0 1.4rem;
@@ -177,7 +177,7 @@ a {
   box-shadow: 0 1px 4px rgba(15,23,42,0.7);
 }
 
-/*  Links row  */
+/* ---------- Links row ---------- */
 
 .link-row {
   margin-top: 1.25rem;
@@ -193,7 +193,7 @@ a {
   text-decoration: underline;
 }
 
-/*  Timeline (education)  */
+/* ---------- Timeline / lists (for other pages, unchanged) ---------- */
 
 .timeline {
   list-style: none;
@@ -237,8 +237,6 @@ a {
   font-size: 0.9rem;
   margin-top: 0.2rem;
 }
-
-/*  Generic lists (interests, projects)  */
 
 ul {
   padding-left: 1.2rem;
