@@ -113,8 +113,8 @@ a {
 }
 
 .about-photo img {
-  width: 240px;
-  height: 260px;
+  width: 300px;
+  height: 320px;
   object-fit: cover;
   border-radius: 1.5rem;
   border: 2px solid #2b3a55;
