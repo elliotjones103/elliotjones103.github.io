@@ -26,8 +26,16 @@
       <ul>
         <li>
           <strong>MSc Dissertation - Martingale Defect in Asset Price Bubbles (79%)</strong><br />
-          Developed continuous SDE and jump-driven strict local martingale models in Python to study asset price bubbles.
-          Used Monte Carlo methods to generate option prices and applied option-implied diagnostics (e.g. put-call parity violations and the bubble gap) to detect and quantify bubble effects.
+          This dissertation began with a focused review of the bubble literature, comparing relevant mathematical papers to connect results across no-arbitrage theory, strict local martingales and option-implied diagnostics. 
+          I set out the no-arbitrage framework to show how bubbles can arise under NFLVR when discounted prices are only required to be local martingales, and quantified bubble size by the martingale defect. 
+          I then studied when bubbles do and do not exist across three benchmark option-pricing settings by comparing the constant-volatility Black-Scholes model with local and stochastic volatility models (CEV and SABR). 
+          Demonstrating this practically, I simulated from these models and generated call sheets using Monte Carlo simulation, then estimated and cross-validated the bubble gap using mean-shortfall and bootstrap uncertainty checks.
+          Because far out-of-the-money quotes are sparse in real markets, I exploited the monotonicity of Delta in strike to utilize a Delta-band approach in estimating the martingale defect, which I applied to cleaned Nvidia CBOE option sheets across multiple maturities and Delta bands to obtain positive defect estimates, indicating potential bubble behaviour under the modelling assumptions.
+          Further, I identified that literature on bubbles arising under jump-driven strict local martingales was comparatively limited and implemented a pure-jump strict local martingale construction from the literature by numerically recovering the model’s marginal distributions for simulation and option pricing using Laplace inversion and COS/Fourier inversion. 
+          This was then used to illustrate how self-exciting jump dynamics can generate a persistent martingale defect.
+        
+        
+        
         </li>
         <li>
           <strong>Monte Carlo Methods for Option Pricing (89%)</strong><br />
