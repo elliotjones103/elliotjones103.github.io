@@ -219,8 +219,8 @@ a {
 }
 
 .pdf-link-inline:focus-visible{
-  outline: 3px solid rgba(99,102,241,0.55);
-  outline-offset: 2px;
+  outline: none;                       /* remove the square outline */
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.55);
 }
 
 .timeline {
