@@ -198,6 +198,8 @@ a {
 .pdf-link-inline{
   display: inline-block;
   margin-top:  6px;
+  padding: 2px 10px;        /* gives it “bubble” size */
+  border-radius: 999px;     /* makes it pill-shaped */
 
   background: var(--accent-soft);
   border: 1px solid rgba(99,102,241,0.55);
