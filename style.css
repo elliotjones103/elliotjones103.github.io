@@ -195,6 +195,34 @@ a {
 
 /* ---------- Timeline / lists (for other pages, unchanged) ---------- */
 
+.pdf-link-inline{
+  display: inline-block;
+  margin-left: 6px;              /* small separation from sentence */
+  padding: 2px 10px;
+  border-radius: 999px;
+
+  background: var(--accent-soft);
+  border: 1px solid rgba(99,102,241,0.55);
+  color: var(--text-main);
+
+  font-weight: 650;
+  text-decoration: none;
+  line-height: 1.6;              /* keeps it aligned with paragraph */
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.pdf-link-inline:hover{
+  transform: translateY(-1px);
+  background: rgba(99,102,241,0.35);
+  border-color: rgba(99,102,241,0.8);
+  text-decoration: none;
+}
+
+.pdf-link-inline:focus-visible{
+  outline: 3px solid rgba(99,102,241,0.55);
+  outline-offset: 2px;
+}
+
 .timeline {
   list-style: none;
   padding-left: 0;
